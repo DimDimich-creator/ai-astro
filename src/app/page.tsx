@@ -14,7 +14,7 @@ export const settings = {
 
 export default function Home() {
   return (
-    <div className="h-screen w-full bg-background relative overflow-hidden ">
+    <main className="h-screen w-full bg-background relative overflow-hidden">
       <StarsBackground
         starDensity={settings.density}
         allStarsTwinkle={settings.allTwinkle}
@@ -60,6 +60,6 @@ export default function Home() {
           />
         </div>
       </div>
-    </div>
+    </main>
   );
 }
