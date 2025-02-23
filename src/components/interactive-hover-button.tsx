@@ -7,12 +7,13 @@ interface InteractiveHoverButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   text?: string;
 }
+import { useTransitionRouter } from "next-view-transitions";
 
 const InteractiveHoverButton = React.forwardRef<
   HTMLButtonElement,
   InteractiveHoverButtonProps
 >(({ text = "Button", className, ...props }, ref) => {
-	const router = useRouter();
+  const router = useTransitionRouter();
   return (
     <button
       ref={ref}
@@ -21,7 +22,7 @@ const InteractiveHoverButton = React.forwardRef<
         className
       )}
       {...props}
-			onClick={() => router.push("/jorney")}
+      onClick={() => router.push("/jorney")}
     >
       <span className="inline-block translate-x-1 transition-all duration-300 group-hover:translate-x-12 group-hover:opacity-0">
         {text}
