@@ -6,15 +6,15 @@ const Spline = lazy(() => import("@splinetool/react-spline"));
 interface SplineSceneProps {
   scene: string;
   className?: string;
-  width?: number;
-  height?: number;
+  // width?: number;
+  // height?: number;
 }
 
 export function SplineScene({
   scene,
   className,
-  width,
-  height,
+  // width,
+  // height,
 }: SplineSceneProps) {
   return (
     <Suspense

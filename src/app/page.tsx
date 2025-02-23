@@ -55,8 +55,8 @@ export default function Home() {
           <SplineScene
             scene="https://prod.spline.design/bAnq74APLU5Vgdnk/scene.splinecode"
             className="w-full h-full"
-            width={512}
-            height={512}
+            // width={512}
+            // height={512}
           />
         </div>
       </div>

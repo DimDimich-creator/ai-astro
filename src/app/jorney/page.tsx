@@ -1,9 +1,8 @@
 import { StarsBackground } from "@/components/stars-background";
 import React from "react";
 import { settings } from "../page";
-import { HyperText } from "@/components/hyper-text";
 import { getData } from "@/actions/astro-days-action";
-import { generateNewDay } from "@/actions/ai";
+
 import { TextScramble } from "@/components/text-scramble";
 import { TextGenerateEffect } from "@/components/text-generate-effect";
 
