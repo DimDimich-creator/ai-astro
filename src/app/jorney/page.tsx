@@ -5,6 +5,10 @@ import { getData } from "@/actions/astro-days-action";
 
 import { TextScramble } from "@/components/text-scramble";
 import { TextGenerateEffect } from "@/components/text-generate-effect";
+import { ShimmerDiv } from "@/components/shimmer-div";
+import { Button } from "@/components/ui/button";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import Footer from "@/components/footer";
 
 export default async function jorneyPage() {
   const data = await getData();
@@ -27,7 +31,7 @@ export default async function jorneyPage() {
               {new Date(data[0].timestamp).toLocaleDateString()}
             </p>
             <TextGenerateEffect
-              duration={2}
+              duration={0.1}
               filter={false}
               words={data[0].text}
               className="text-xl"
@@ -43,6 +47,7 @@ export default async function jorneyPage() {
           ))}
         </ul>
       </main>
+      <Footer />
     </>
   );
 }

@@ -4,6 +4,7 @@ import "./globals.css";
 import { siteConfig } from "@/site/config";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ViewTransitions } from "next-view-transitions";
+import Footer from "@/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,6 +40,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             {children}
+            {/* <Footer /> */}
           </ThemeProvider>
         </body>
       </html>
